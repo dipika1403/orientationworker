@@ -38,6 +38,6 @@ public class RabbitMQListenerService {
 
     @RabbitListener(queues = "${amqp.checkout.queue}")
     public void checkoutListener(String msg) {
-        LOGGER.info("Received checkout message: {} from Badge-A-Rama exchange topic.", msg);
+        LOGGER.info("Received checkout message: {} from pdf-worker exchange topic.", msg);
     }
 }
